@@ -1,0 +1,20 @@
+<div>
+  <p-card header="Users">
+    <p-table [value]="users">
+      <ng-template pTemplate="header">
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Birthday</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-user>
+        <tr>
+          <td>{{user.name}}</td>
+          <td>{{user.email}}</td>
+          <td>{{user.birthday}}</td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </p-card>
+</div>

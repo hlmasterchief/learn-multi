@@ -1,0 +1,15 @@
+<div>
+  <p-card header="Profile">
+    <div class="p-fluid">
+      <div class="p-field">
+        <label for="name">Name</label>
+        <input id="name" type="text" [(ngModel)]="name" pInputText>
+      </div>
+      <div class="p-field">
+        <label for="birthday">Birthday</label>
+        <p-calendar inputId="birthday" [(ngModel)]="birthday"></p-calendar>
+      </div>
+    </div>
+    <button pButton type="button" label="Save" (click)="save()"></button>
+  </p-card>
+</div>
